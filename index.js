@@ -16,7 +16,7 @@ function diceRoll(number, dice) {
 
   while (n <= 6) {
     if (number === n) {
-      imgSrc.setAttribute("src", "Images/dice" + number + ".png");
+      imgSrc.setAttribute("src", "images/dice" + number + ".png");
     }
     n++;
   }
