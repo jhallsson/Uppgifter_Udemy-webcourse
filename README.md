@@ -1,5 +1,11 @@
 # webcourse
 
-Tindog: https://jhallsson.github.io/webcourse/tindog/ </br>
-Dice game: https://jhallsson.github.io/webcourse/dicegame/
-Drum kit: https://jhallsson.github.io/webcourse/drumkit/
+<section id="content">
+    <p>
+      <ul>
+      <li><a href="https://jhallsson.github.io/webcourse/tindog/">Tindog</a></li>
+      <li><a href="https://jhallsson.github.io/webcourse/dicegame/">Dice game</a></li>
+      <li><a href="https://jhallsson.github.io/webcourse/drumkit/">Drum kit</a></li>
+    </ul>
+  </p>
+  </section>
