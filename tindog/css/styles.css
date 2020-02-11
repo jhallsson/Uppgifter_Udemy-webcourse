@@ -1,0 +1,135 @@
+body {
+  font-family: 'Montserrat';
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 900;
+  padding-bottom: 10%;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+p {
+  color: #8f8f8f;
+  /* padding: 0 5%; */
+}
+
+.container-fluid {
+  padding: 5% 15%;
+}
+
+.sec-white {
+  background-color: #fff;
+}
+
+.sec-colored {
+  color: white;
+  background-color: #ff4c68;
+}
+
+.btn-lg {
+  margin: 0 3% 5% 0;
+}
+
+/* ----TITLE/NAVBAR---- */
+#title .container-fluid {
+  padding: 1% 15% 8%;
+  text-align: left;
+}
+
+/* ---hela navbar---  */
+.navbar {
+  padding-bottom: 8%;
+}
+
+/* ---tindog till vänster--- */
+.navbar-brand {
+  font-family: 'Ubuntu';
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* ---länkar i navbar--- */
+a.nav-item {
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin: 0 20px;
+}
+
+.iphoneImg {
+  position: absolute;
+  right: 20%;
+  width: 60%;
+  transform: rotate(25deg);
+}
+
+/* ----FEATURES---- */
+#features {
+  position: relative;
+  padding: 3% 0;
+}
+
+.feat-col i {
+  color: #ef8172;
+  padding-bottom: 10%;
+}
+
+.feat-col i:hover {
+  color: #ff4c68;
+}
+
+/* ----TESTIMONIALS---- */
+#testimonials, #press {
+  background-color: #ef8172;
+}
+
+.testImg {
+  width: 10%;
+  border-radius: 100%;
+  margin-left: 20px;
+}
+
+.carousel-item {
+  padding: 5% 20% 0;
+}
+
+/* ----PRESS---- */
+.pressImg {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* ----PRICING---- */
+.cardSlot {
+  margin: 10% ;
+}
+
+/* ----CALL TO ACTION---- */
+/* ----FOOTER---- */
+#footer i {
+  margin: 1%;
+}
+
+/* ----MEDIA-QUERY---- */
+@media (max-width:980px) {
+  #title {
+    text-align: center;
+  }
+
+  .iphoneImg {
+    transform: rotate(0);
+    position: static;
+  }
+}
