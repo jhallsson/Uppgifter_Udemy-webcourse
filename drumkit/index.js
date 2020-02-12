@@ -14,6 +14,19 @@
 var buttonArray = document.querySelectorAll(".drum");
 var numberOfButtons = document.querySelectorAll(".drum").length;
 
+for (var i = 0; i < numberOfButtons; i++) {
+  buttonArray[i].addEventListener("click", function() { //lägg till click-lyssnare till alla i .drum
+    var pressedDrum = this.innerHTML;
+    playSound(pressedDrum);
+    animateKey(pressedDrum);
+  });
+}
+document.addEventListener("keydown", function(event) {
+  var pressedKey = event.key;
+  playSound(pressedKey);
+  animateKey(pressedKey);
+});
+
 function playSound(drumKey) {
   switch (drumKey) {
     case "w":
@@ -41,17 +54,14 @@ function playSound(drumKey) {
       console.log("Invalid Key.");
   }
 }
-for (var i = 0; i < numberOfButtons; i++) {
-  buttonArray[i].addEventListener("click", function() { //lägg till click-lyssnare till alla i .drum
-    var pressedDrum = this.innerHTML;
-    playSound(pressedDrum);
-  });
+function animateKey(key){
+  var keyElement = document.querySelector("."+ key);
+  keyElement.classList.add("pressed");
+  console.log(keyElement);
+  setTimeout(function(){
+    keyElement.classList.remove("pressed");
+  }, 100);
 }
-document.addEventListener("keydown", function(event) {
-  var pressedKey = event.key;
-  playSound(pressedKey);
-});
-
 //MIN LÖSNING TILL HALVA PROBLEMET
 //var pressedDrum = this.innerHTML;
 // for (var n = 0; n < numberOfButtons; n++) {
