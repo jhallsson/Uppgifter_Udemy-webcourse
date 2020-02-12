@@ -1,16 +1,3 @@
-// function KeySound(keyLetter, sound) {
-//   this.keyLetter = keyLetter;
-//   this.sound = sound;
-// }
-
-// var w = new KeySound("w", new Audio("sounds/tom-1.mp3"));
-// var a = new KeySound("a", new Audio("sounds/tom-2.mp3"));
-// var s = new KeySound("s", new Audio("sounds/tom-3.mp3"));
-// var d = new KeySound("d", new Audio("sounds/tom-4.mp3"));
-// var j = new KeySound("j", new Audio("sounds/kick-bass.mp3"));
-// var k = new KeySound("k", new Audio("sounds/snare.mp3"));
-// var l = new KeySound("l", new Audio("sounds/crash.mp3"));
-
 var buttonArray = document.querySelectorAll(".drum");
 var numberOfButtons = document.querySelectorAll(".drum").length;
 
